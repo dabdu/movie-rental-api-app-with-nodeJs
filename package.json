@@ -1,18 +1,14 @@
 {
-  "name": "new-vidly",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "jest": {
-    "verbose": true,
-    "testURL": "http://localhost/"
-  },
   "scripts": {
     "test": "jest --watchAll",
     "start": "node index.js"
   },
   "engines": {
-    "node": "16.13.0"
+    "node": "16.14.2"
   },
   "keywords": [],
   "author": "",
@@ -32,9 +28,5 @@
     "mongoose": "^5.13.13",
     "winston": "^2.4.0",
     "winston-mongodb": "^3.0.0"
-  },
-  "devDependencies": {
-    "jest": "^22.2.2",
-    "supertest": "^6.1.6"
   }
 }

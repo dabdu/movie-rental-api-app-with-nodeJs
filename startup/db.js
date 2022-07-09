@@ -3,7 +3,11 @@ const winston = require("winston");
 module.exports = function () {
   mongoose
     .connect(
-      "mongodb+srv://Ibrahim:12345@cluster0.l1z2d.mongodb.net/vidly?retryWrites=true&w=majority"
+      "mongodb+srv://dabdu:dabdu@cluster0.6qvvk.mongodb.net/?retryWrites=true&w=majority",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
     )
     .then(() => winston.info(`Connected to DB...`));
   //   .catch(err => console.error('Could not connect to MongoDB...'));
